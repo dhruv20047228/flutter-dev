@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/widgets/snackbar.dart';
+import 'package:my_app/dissmissible.dart';
 
-void main() => (runApp(MyApp()));
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,11 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark, primaryColor: Colors.amber
-      ),
       debugShowCheckedModeBanner: false,
-      home: SnackBarWidget()
+      home: DismissibleWidget(),
     );
   }
 }
