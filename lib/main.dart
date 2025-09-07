@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/widgets/dropdown.dart';
+import 'package:my_app/widgets/stacked.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,6 +8,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: DropDownMenu());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Stacked());
   }
 }
