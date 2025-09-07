@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/dissmissible.dart';
+import 'package:my_app/widgets/dissmissible.dart';
 
 void main() => runApp(MyApp());
 
