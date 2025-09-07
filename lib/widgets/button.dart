@@ -13,10 +13,10 @@ class Button extends StatelessWidget {
           children: [
             TextButton(
               style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.all(30)),
-                overlayColor: MaterialStateProperty.all(Colors.pinkAccent),
-                elevation: MaterialStateProperty.all(20),
-                backgroundColor: MaterialStateProperty.all(Colors.yellowAccent),
+                padding: WidgetStateProperty.all(EdgeInsets.all(30)),
+                overlayColor: WidgetStateProperty.all(Colors.pinkAccent),
+                elevation: WidgetStateProperty.all(20),
+                backgroundColor: WidgetStateProperty.all(Colors.yellowAccent),
               ),
               child: Text(
                 'Press me bro!',
@@ -25,15 +25,15 @@ class Button extends StatelessWidget {
               onPressed: () {},
             ),
             SizedBox(height: 20),
-            Container(
+            SizedBox(
               height: 50,
               width: 250,
               child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
+                  backgroundColor: WidgetStateProperty.all(
                     Theme.of(context).primaryColor,
                   ),
-                  shape: MaterialStateProperty.all(
+                  shape: WidgetStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(40),
                     ),
