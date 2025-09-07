@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/widgets/dissmissible.dart';
+import 'package:my_app/widgets/drawer.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,9 +8,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DismissibleWidget(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: DrawerWidget());
   }
 }
