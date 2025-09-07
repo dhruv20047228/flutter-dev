@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/widgets/ImageWidget.dart';
+import 'package:my_app/widgets/AlertDia.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,6 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: ImageWidget());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: AlertDialogue(),
+    );
   }
 }
